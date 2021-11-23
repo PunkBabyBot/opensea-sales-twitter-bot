@@ -21,7 +21,7 @@ function formatAndSendTweet(event) {
     const formattedEthPrice = formattedUnits * tokenEthPrice;
     const formattedUsdPrice = formattedUnits * tokenUsdPrice;
 
-    const tweetText = `${assetName} was adopted for Ξ${formattedEthPrice}${ethers.constants.EtherSymbol} ($${Number(formattedUsdPrice).toFixed(2)})\n ${openseaLink}\n #NFTs #NFTCommunity #PunkBabies #Punks & #Phunks`;
+    const tweetText = `${assetName} was adopted for ${formattedEthPrice}${ethers.constants.EtherSymbol} ($${Number(formattedUsdPrice).toFixed(2)})\n ${openseaLink}\n #NFTs #NFTCommunity #PunkBabies #Punks & #Phunks`;
 
     console.log(tweetText);
 
